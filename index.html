@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script type="module" src="reg.js" defer></script>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div id="loginForm">
+        <h2>Login</h2>
+        <form action="login.html" method="post">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="username" required><br><br>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" required><br><br>
+
+            <button id="sumbit" type="submit">create Account</button>
+
+            <p>New user? <button type="button" onclick="toggleForm()">Sign Up</button></p>
+        </form>
+    </div>
+
+    <!-- Signup Form (Hidden initially) -->
+    <div id="signupForm" style="display:none;">
+        <h2>Sign Up</h2>
+        <form action="signup.html" method="post">
+            <label for="signupEmailPhone">Email or Phone:</label>
+            <input type="text" id="signupEmailPhone" name="emailOrPhone" required><br><br>
+
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="password" required><br><br>
+
+            <button id="sumbit" type="submit">create Account</button>
+
+            <p>Already have an account? <button type="button" onclick="toggleForm()">Login</button></p>
+        </form>
+    </div>
+
+</body>
+</html>
